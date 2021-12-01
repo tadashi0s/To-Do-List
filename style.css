@@ -1,0 +1,62 @@
+
+.container{
+    background-color: aquamarine;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+    position:sticky;
+    top: 1px;
+}
+.container input{
+    width: 75%;
+   padding: 8px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    outline: none;
+}
+#btn {
+  width: 5%;
+  padding: 8px;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  text-decoration: black;
+  font-size: 1.1rem;
+}
+#task-container {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+#task-container::-webkit-scrollbar {
+    display: none;
+}
+.Box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 5px black;
+    margin-bottom: 10px;
+    background-color: darkgray;
+    
+}
+.Box p{
+    font-size: large;
+    font-weight: 700;
+    cursor: pointer;
+    margin-left: 25px;
+}
+.Box button{
+    cursor: pointer;
+    margin-right: 25px;
+    display: none;
+}
+.Box button:hover{
+    background-color: darkred;
+    background-size: contain;
+}
+.Box:hover button{
+    display: block;
+
+}
+
+
