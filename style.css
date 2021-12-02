@@ -39,6 +39,24 @@
     background-color: darkgray;
     
 }
+.Box div{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.Box div div{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-left: 10px;
+    border: 3px solid cyan;
+
+}
+.Box div div img{
+    width: 25px;
+    height: 25px;
+}
 .Box p{
     font-size: large;
     font-weight: 700;
