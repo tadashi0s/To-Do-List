@@ -25,11 +25,16 @@ btn.addEventListener('click',function(){
     }
     div.children[0].children[0].addEventListener('click',function(){
         div.children[0].children[1].style.textDecoration = 'line-through';  // Mark As Done
-        div.children[0].children[1].style.color = 'white';
+        
+        if(!div.children[0].children[0].innerHTML){
+            // console.log(onetime)
         let img = document.createElement('img');
         img.src = './tick.png';   
         console.log(img);
         div.children[0].children[0].appendChild(img);  // Added Tick Option
+
+        }
+       
     })
     div.children[0].children[1].addEventListener('click',function(){
         div.children[0].children[1].contentEditable = true;            // Made Content Editable
